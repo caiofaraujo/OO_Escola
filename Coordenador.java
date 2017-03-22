@@ -30,9 +30,9 @@ public class Coordenador extends Funcionario {
         this.salario = salario;
     }
     
-    public void bonificaSalario (double valor) {
+   public double bonificaSalario (double valor) {
         this.salario = this.salario + valor;
+        return this.salario;
     } 
-    
     
 }
