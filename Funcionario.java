@@ -11,6 +11,7 @@ package OO_Atividade;
  */
 public class Funcionario {
     public String nome;
+    private double salario;
     
     public String getNome() {
         return nome;
@@ -18,5 +19,10 @@ public class Funcionario {
     
     public void setNome(String nome) {
         this.nome = nome;
+    }
+    
+    public double bonificaSalario (double valor) {
+        this.salario = this.salario + valor;
+        return this.salario;
     }
 }
